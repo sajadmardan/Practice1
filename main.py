@@ -2,8 +2,14 @@ print('hello git')
 
 products = []
 while len(products) < 3:
-    name = input('Enter product name: ')
+    while True:
+        name = input('Enter product name: ')
+        if name in[n['name'] for n in products]:
+            print('product already exists')
+            continue
+        break
     price = float(input('Enter product price: '))
+
     products.append({'name': name, 'price': price})
 
 found = False
