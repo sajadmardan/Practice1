@@ -1,4 +1,8 @@
-name = "Sajad"
+print('hello git')
 
-print(f"Hello, {name}!")
-print("My first GitHub project")
+products = []
+while len(products) < 3:
+    name = input('Enter product name: ')
+    price = float(input('Enter product price: '))
+    products.append({'name': name, 'price': price})
+print(products)
